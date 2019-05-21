@@ -5,6 +5,7 @@ import "../offer.html";
 import "../contact.html";
 import "../blog.html";
 import "../media.html";
+import "./zl_full";
 import "./zl_widget";
 
 // Strzałka powracająca do menu głównego
