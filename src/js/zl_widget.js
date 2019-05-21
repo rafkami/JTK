@@ -5,7 +5,7 @@
   if (!$_x.getElementById(id)) {
     js = $_x.createElement(_s);
     js.id = id;
-    js.src = "/src/js/zl_full.js";
+    js.src = "/public/zl_full.js";
     fjs.parentNode.insertBefore(js, fjs);
   }
 })(document, "script", "zl-widget-s");
