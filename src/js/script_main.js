@@ -5,14 +5,13 @@ import "../offer.html";
 import "../contact.html";
 import "../blog.html";
 import "../media.html";
-import "./zl_full";
 import "./zl_widget";
 
 // Strzałka powracająca do menu głównego
 
 const arrow = document.querySelector(".arrow");
 arrow.onclick = function() {
-  scrollTo(0, 1000);
+  scrollTo(0, 300);
 };
 const scrollTo = function(to, duration) {
   const element = document.scrollingElement || document.documentElement,

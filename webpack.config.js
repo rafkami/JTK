@@ -73,29 +73,6 @@ module.exports = {
           }
         ]
       }
-      // ,
-      // {
-      //   test: /\.html$/,
-      //   use: [
-      //     {
-      //       loader: "file-loader",
-      //       options: {
-      //         name: "[name].[ext]"
-      //       }
-      //     },
-      //     {
-      //       loader: "extract-loader"
-      //     },
-      //     {
-      //       loader: "html-loader",
-      //       options: {
-      //         attrs: ["img:src"]
-      //       }
-      //     }
-      //   ]
-      // ,
-      // exclude: path.resolve(__dirname, "src/index.html")
-      //   }
     ]
   },
   plugins: [
