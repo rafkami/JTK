@@ -412,8 +412,8 @@ div.subtitle p {
   width: 86vw;
   justify-content: space-between;
   margin: 0 7vw 2vh;
-  min-height: 69.4vh;
-  max-height: 69.4vh;
+  min-height: 65.6vh;
+  max-height: 65.6vh;
 }
 
 .offer__column--1 {
@@ -523,7 +523,7 @@ div.subtitle p {
 }
 
 .media__card:hover .media__card--front {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 
 .media__card:hover .media__card--back {
@@ -548,6 +548,7 @@ div.subtitle p {
   width: 100%;
   backface-visibility: hidden;
   background-size: cover;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.3);
 }
 
 .media__card--title {
@@ -797,10 +798,12 @@ div.blog {
 /* stopka */
 
 footer {
-  position: absolute;
+  /* position: absolute;
   left: 0;
-  bottom: 0;
-  display: block;
+  bottom: 0; */
+  min-height: 3.6rem;
+  margin-top: -3.6rem;
+  display: inline-block;
   width: 100%;
   text-align: center;
   font-size: 1.2rem;
@@ -1106,7 +1109,7 @@ footer {
   }
 }
 
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
   html {
     font-size: 6px;
   }
@@ -1226,7 +1229,7 @@ footer {
   }
 }
 
-@media (max-width: 900px) and (orientation: portrait) {
+@media (max-width: 1000px) and (orientation: portrait) {
   main div.motto {
     margin-bottom: 8vh;
     padding-top: 9vh;
