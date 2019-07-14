@@ -131,6 +131,7 @@ header nav ul li {
 
 .burger-menu--icon {
   position: absolute;
+  right: -20%;
   top: 50%;
   transform: translateY(-50%);
   width: inherit;
@@ -142,10 +143,10 @@ header nav ul li {
   position: absolute;
   left: inherit;
   width: inherit;
-  font-size: 0.5rem;
-  height: 0.5rem;
+  font-size: 0.4rem;
+  height: 0.4rem;
   background-color: white;
-  border-radius: 1px;
+  border-radius: 5px;
   transition: top 0.2s 0.2s linear, bottom 0.2s 0.2s linear,
     opacity 0.2s 0.2s linear, transform 0.2s 0.4s linear;
 }
@@ -303,7 +304,7 @@ main > div {
   line-height: 200%;
   width: 35vw;
   height: auto;
-  min-height: 100vh;
+  min-height: 50vh;
 }
 
 .landing-page {
@@ -327,7 +328,7 @@ main div p {
   content: "\f139";
   font-weight: 900;
   font-size: 4rem;
-  color: #805a8c;
+  color: #ba9bbf;
 }
 
 .arrow {
@@ -349,7 +350,7 @@ main div p {
 main div.motto {
   margin: 0 0 12vh;
   padding: 16vh 0 0;
-  width: 100vw;
+  width: 100%;
   height: 18.6vh;
   min-height: 0;
   background-image: linear-gradient(to bottom, #bf9994 50%, #fff);
@@ -367,8 +368,8 @@ main div.motto p {
 
 main div.AsiaImg {
   width: 86vw;
-  margin: 6vh 7vw 4vh;
-  min-height: 60vh;
+  margin: 6vh 7vw 2vh;
+  min-height: 30vh;
 }
 
 main div.AsiaImg img {
@@ -387,7 +388,7 @@ main div.AfterAsiaImg {
 
 div.subtitle {
   width: 100%;
-  margin: 0 0 10vh;
+  margin: 0 0 6vh;
   padding: 15vh 0 0;
   height: 18.6vh;
   min-height: 0;
@@ -412,8 +413,8 @@ div.subtitle p {
   width: 86vw;
   justify-content: space-between;
   margin: 0 7vw 2vh;
-  min-height: 65.6vh;
-  max-height: 65.6vh;
+  min-height: 71.1vh;
+  max-height: 71.1vh;
 }
 
 .offer__column--1 {
@@ -464,11 +465,34 @@ div.subtitle p {
   text-align: center;
 }
 
-.offer__column > *:nth-last-child(2) {
+.offer__details {
   margin-top: 3rem;
-  padding: 0 1rem;
-  transform: translateY(140%);
-  font-size: 1.5rem;
+  padding: 1rem;
+  transform: translateY(160%);
+  display: table;
+}
+
+.offer__details--group {
+  display: table-cell;
+  list-style: none;
+  font-size: 1.6rem;
+  width: 50%;
+}
+
+.offer__details--issue {
+  line-height: 150%;
+  padding-left: 2rem;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.offer__details--issue:first-child {
+  margin-top: 1rem;
+}
+
+.offer__details--issue::before {
+  content: "\00BB \0020";
+  font-size: 1.8rem;
 }
 
 .pricelist {
@@ -477,7 +501,7 @@ div.subtitle p {
   min-height: auto;
   background-color: #bf9994;
   border-radius: 2rem;
-  transform: translateY(160%);
+  transform: translateY(200%);
   font-size: 2rem;
 }
 
@@ -490,7 +514,7 @@ div.subtitle p {
   flex: 3;
 }
 
-.offer__column.revealed > *:nth-last-child(2) {
+.offer__column.revealed > .offer__details {
   transform: translateY(0);
   background-color: rgba(243, 243, 243, 0.4);
   border-radius: 2rem;
@@ -507,8 +531,8 @@ div.subtitle p {
   width: 90vw;
   display: flex;
   flex-direction: row;
-  min-height: 58.1vh;
-  max-height: 58.1vh;
+  min-height: 59.8vh;
+  max-height: 59.8vh;
   justify-content: center;
 }
 
@@ -517,7 +541,7 @@ div.subtitle p {
   margin: 0 2vw;
   min-height: 0;
   max-height: 0;
-  height: 58.1vh;
+  height: 59.8vh;
   width: 22vw;
   position: relative;
 }
@@ -612,12 +636,13 @@ div.subtitle p {
   text-decoration: none;
   color: #805a8c;
   font-size: 2rem;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0.5rem 0;
   padding: 0.5rem 2rem;
   background-color: #f3f3f3;
   opacity: 0.8;
   border-radius: 1rem;
   text-align: center;
+  line-height: 150%;
 }
 
 .media__card--link:hover {
@@ -627,7 +652,7 @@ div.subtitle p {
 
 /* blog */
 
-div.blog {
+/* div.blog {
   max-width: 70vw;
   margin: 1rem 7vw 4rem;
   line-height: 200%;
@@ -719,7 +744,7 @@ div.blog {
   font-size: 1.8rem;
   text-decoration: none;
   color: #805a8c;
-}
+} */
 
 /* kontakt */
 
@@ -801,8 +826,8 @@ footer {
   /* position: absolute;
   left: 0;
   bottom: 0; */
-  min-height: 3.6rem;
-  margin-top: -3.6rem;
+  min-height: 3vh;
+  margin-top: -3vh;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -818,7 +843,7 @@ footer {
   }
 
   div.subtitle {
-    margin-bottom: 6vh;
+    margin-bottom: 3.6vh;
     padding-top: 12vh;
   }
 
@@ -828,12 +853,19 @@ footer {
   }
 
   .media__wrapper {
-    min-height: 62.1vh;
-    max-height: 62.1vh;
+    min-height: 75vh;
+    max-height: 75vh;
+    height: 75vh;
+    margin-bottom: 0.5vh;
+  }
+
+  .media__card--side {
+    height: 70vh;
+    min-height: 70vh;
   }
 
   .media__card--img {
-    height: 4vh;
+    height: 5vh;
   }
 
   .media__card--link {
@@ -843,6 +875,10 @@ footer {
 
   .contact__address {
     min-height: 50vh;
+    margin: 2vh 7vw 5vh;
+  }
+  footer {
+    font-size: 1.5rem;
   }
 }
 
@@ -850,9 +886,21 @@ footer {
   html {
     font-size: 8px;
   }
+
+  main div.AfterAsiaImg {
+    margin-bottom: 1vh;
+  }
+
+  footer {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 1200px) and (orientation: portrait) {
+  html {
+    font-size: 8px;
+  }
+
   @keyframes message {
     0% {
       opacity: 0;
@@ -1012,7 +1060,7 @@ footer {
   div.subtitle {
     margin-bottom: 3vh;
     padding-top: 8vh;
-    height: 14vh;
+    height: 12vh;
   }
 
   .offer {
@@ -1042,15 +1090,15 @@ footer {
   .media__wrapper {
     flex-direction: column;
     justify-content: space-between;
-    min-height: 78vh;
-    max-height: 78vh;
-    height: 78vh;
-    margin-bottom: 5vh;
+    min-height: 80vh;
+    max-height: 80vh;
+    height: 80vh;
+    margin-bottom: 2.9vh;
   }
 
   .media__card {
     width: 86vw;
-    min-height: 20vh;
+    min-height: 21vh;
   }
 
   .media__card:hover .media__card--front {
@@ -1119,7 +1167,7 @@ footer {
   }
 
   header nav ul {
-    width: 20vw;
+    width: 30vw;
     flex-direction: column;
     justify-content: end;
     align-content: center;
@@ -1142,10 +1190,14 @@ footer {
     display: block;
   }
 
+  .burger-menu--icon {
+    right: -90%;
+  }
+
   .burger-menu.active ~ li {
     position: relative;
     display: block;
-    width: 20vw;
+    width: 30vw;
     text-align: center;
     transition: 0.3s linear;
   }
@@ -1180,7 +1232,7 @@ footer {
   header.narrow nav ul {
     align-items: flex-start;
     height: 4rem;
-    width: 20vw;
+    width: 30vw;
   }
 
   header.narrow .title a {
@@ -1189,6 +1241,18 @@ footer {
 
   header.narrow nav ul li {
     background-color: #ba9bbf;
+  }
+
+  main > div {
+    width: 86vw;
+  }
+
+  .landing-page {
+    margin: 8vh 7vw;
+  }
+
+  .landing-page:first-child {
+    margin-bottom: 0;
   }
 
   main div.motto {
@@ -1215,8 +1279,19 @@ footer {
     font-size: 1.5rem;
   }
 
-  .media__card--img {
-    height: 6vh;
+  .media__wrapper {
+    min-height: 67.6vh;
+    height: 67.6vh;
+    margin-bottom: 0vh;
+  }
+
+  .media__card--side {
+    height: 60vh;
+    min-height: 60vh;
+  }
+
+  .media__card--title {
+    font-size: 2.5rem;
   }
 
   .media__card--link {
@@ -1244,7 +1319,7 @@ footer {
   }
 
   div.subtitle {
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
     padding-top: 10vh;
     height: 16vh;
   }
@@ -1256,16 +1331,25 @@ footer {
     height: 120vh;
   }
 
+  .offer__column.revealed > .pricelist {
+    margin-top: 2.5rem;
+  }
+
   .media__wrapper {
-    min-height: 90vh;
-    margin-bottom: 8vh;
+    min-height: 78vh;
+    height: 78vh;
+    margin-bottom: 2.8vh;
+  }
+
+  .media__card {
+    min-height: 17vh;
   }
 
   .media__card--side {
-    height: 20vh;
+    height: 17vh;
   }
 
-  .blog-list {
+  /* .blog-list {
     position: fixed;
     top: 50%;
     right: -24%;
@@ -1289,24 +1373,16 @@ footer {
   .blog-list.active nav h3 {
     margin: 0 0 2rem;
     color: black;
+  } */
+
+  .contact__it {
+    padding-top: 4vh;
   }
 }
 
 @media (max-width: 640px) and (orientation: landscape) {
   html {
-    font-size: 5px;
-  }
-
-  main > div {
-    width: 86vw;
-  }
-
-  .landing-page {
-    margin: 8vh 7vw;
-  }
-
-  .landing-page:first-child {
-    margin-bottom: 0;
+    font-size: 6px;
   }
 
   main div.AfterAsiaImg:nth-last-child(2) {
@@ -1317,8 +1393,38 @@ footer {
     max-width: 48vw;
   }
 
+  div.subtitle {
+    margin-bottom: 6vh;
+    padding-top: 19vh;
+    height: 26vh;
+  }
+
+  .offer {
+    flex-direction: column;
+    min-height: 160vh;
+    max-height: 0;
+    height: 160vh;
+  }
+
+  .offer__column {
+    width: 86vw;
+    min-height: 0vh;
+  }
+
+  .offer__column--1 {
+    background-position: center center;
+  }
+
+  .offer__column--2 {
+    background-position-y: bottom;
+  }
+
+  .offer__column--3 {
+    background-position-y: top;
+  }
+
   .offer__column.active {
-    flex: 3;
+    flex: 3.4;
   }
 
   .offer__column.revealed > .offer__details {
@@ -1329,8 +1435,52 @@ footer {
     padding-bottom: 1rem;
   }
 
+  .media__wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 130vh;
+    max-height: 130vh;
+    height: 130vh;
+    margin-bottom: 8vh;
+  }
+
+  .media__card {
+    width: 86vw;
+    min-height: 28vh;
+  }
+
+  .media__card:hover .media__card--front {
+    transform: rotateX(180deg);
+  }
+
+  .media__card:hover .media__card--back {
+    transform: rotateX(0);
+  }
+
+  .media__card--side {
+    min-height: 29vh;
+    height: 29vh;
+    transition: all 1s ease;
+  }
+
+  .media__card--zwierciadlo,
+  .media__card--zwierciadlo-bl,
+  .media__card--onet,
+  .media__card--onet-bl {
+    background-position-y: center;
+  }
+
+  .media__card--img {
+    height: 6vh;
+  }
+
+  .media__card--back {
+    transform: rotateX(180deg);
+  }
+
   .media__card--link {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    padding: 0.25rem 2rem;
   }
 
   .contact__it {
@@ -1359,6 +1509,10 @@ footer {
     height: 14vh;
   }
 
+  .media__wrapper {
+    margin-bottom: 4vh;
+  }
+
   .blog-list {
     right: -27.5%;
   }
@@ -1376,28 +1530,6 @@ footer {
     height: 15rem;
     width: 70vw;
   }
-}
-
-@media (max-width: 400px) and (orientation: portrait) {
-  html {
-    font-size: 5px;
-  }
-
-  .offer__column > *:nth-last-child(2) {
-    transform: translateY(150%);
-  }
-
-  .pricelist {
-    transform: translateY(200%);
-  }
-
-  .offer__column.active {
-    flex: 2.4;
-  }
-
-  .blog-list {
-    right: -26%;
-  }
 
   #contact__map--leg {
     height: 82vw;
@@ -1410,11 +1542,42 @@ footer {
   }
 }
 
+@media (max-width: 400px) and (orientation: portrait) {
+  html {
+    font-size: 5px;
+  }
+
+  .media__wrapper {
+    margin-bottom: 3.8vh;
+  }
+
+  .offer__column > *:nth-last-child(2) {
+    transform: translateY(150%);
+  }
+
+  .pricelist {
+    transform: translateY(200%);
+  }
+
+  .offer {
+    min-height: 120vh;
+    height: 120vh;
+  }
+
+  .offer__column.active {
+    flex: 2;
+  }
+
+  .blog-list {
+    right: -26%;
+  }
+}
+
 @media (max-width: 320px) and (orientation: portrait) {
   div.subtitle {
-    margin-bottom: 4vh;
-    padding-top: 10vh;
-    height: 14vh;
+    margin-bottom: 3vh;
+    padding-top: 9vh;
+    height: 13vh;
   }
 
   main div.motto {
@@ -1427,8 +1590,12 @@ footer {
     margin: 0 12.5vw;
   }
 
+  .offer__column {
+    line-height: 150%;
+  }
+
   .offer__column.active {
-    flex: 3;
+    flex: 4;
   }
 
   .blog-list {
