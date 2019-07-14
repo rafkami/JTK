@@ -6,13 +6,7 @@ const dotenv = require("dotenv").config({ path: __dirname + "/.env" });
 
 module.exports = {
   entry:
-    // { index:
     "./src/js/script_main.js",
-  // about: "./src/js/script_main.js",
-  // offer: "./src/js/script_main.js",
-  // media: "./src/js/script_main.js",
-  // blog: "./src/js/script_main.js",
-  // contact: "./src/js/script_main.js" },
   output: {
     path: path.resolve(__dirname, "public"),
     filename: "[name].bundle.js",
@@ -91,10 +85,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "media.html",
       template: "src/media.html"
-    }),
-    new HtmlWebpackPlugin({
-      filename: "blog.html",
-      template: "src/blog.html"
     }),
     new HtmlWebpackPlugin({
       filename: "contact.html",
