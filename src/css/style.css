@@ -495,8 +495,8 @@ main > div {
   width: 86vw;
   justify-content: space-between;
   margin: 2.6vh 7vw 2vh;
-  min-height: 73.1vh;
-  max-height: 73.1vh;
+  min-height: 73.3vh;
+  max-height: 73.3vh;
 }
 
 .offer__column--1 {
@@ -570,7 +570,7 @@ main > div {
 .offer__details {
   margin-top: 3rem;
   padding: 1rem;
-  transform: translateY(160%);
+  transform: translateY(230%);
   display: table;
 }
 
@@ -603,7 +603,7 @@ main > div {
   min-height: auto;
   background-color: #bf9994;
   border-radius: 2rem;
-  transform: translateY(250%);
+  transform: translateY(600%);
   font-size: 2rem;
 }
 
@@ -633,8 +633,8 @@ main > div {
   width: 90vw;
   display: flex;
   flex-direction: row;
-  min-height: 59.8vh;
-  max-height: 59.8vh;
+  min-height: 60vh;
+  max-height: 60vh;
   justify-content: center;
 }
 
@@ -950,6 +950,23 @@ footer {
     padding-top: 12vh;
   }
 
+  .about__gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about__gallery-wrapper {
+    margin-top: 6vh;
+  }
+
+  .about__gallery--item {
+    margin: 2vw;
+  }
+
+  .about__gallery--item img {
+    max-width: 18vw;
+  }
+
   .offer {
     min-height: 75vh;
     max-height: 75vh;
@@ -1196,6 +1213,19 @@ footer {
 
   .AfterAsiaImg {
     margin: 0 7vw 4vh;
+  }
+
+  .about__gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about__gallery--item {
+    margin: 2vw;
+  }
+
+  .about__gallery--item img {
+    max-width: 18vw;
   }
 
   .subtitle {
@@ -1808,6 +1838,10 @@ footer {
 
   .landing-page {
     height: 67vh;
+  }
+
+  .about__gallery--item {
+    max-width: 39vw;
   }
 
   .pricelist {
