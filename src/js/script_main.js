@@ -6,6 +6,7 @@ import "../contact.html";
 import "../blog.html";
 import "../media.html";
 import "./zl_widget";
+import baguetteBox from "../../node_modules/baguettebox.js/dist/baguetteBox";
 
 // Strzałka powracająca do menu głównego
 
@@ -84,6 +85,15 @@ document.addEventListener("click", function(e) {
   ) {
     toggleActive.classList.remove("active");
   }
+});
+
+// galeria dyplomów i certyfikatów
+
+baguetteBox.run(".about__gallery", {
+  async: true,
+  fullScreen: true,
+  titleTag: true,
+  overlayBackgroundColor: "rgba(111, 62, 118, 1)"
 });
 
 // wjeżdżające info w ofercie
