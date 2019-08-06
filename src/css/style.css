@@ -495,8 +495,8 @@ main > div {
   width: 86vw;
   justify-content: space-between;
   margin: 2.6vh 7vw 2vh;
-  min-height: 73.3vh;
-  max-height: 73.3vh;
+  min-height: 73.1vh;
+  max-height: 73.1vh;
 }
 
 .offer__column--1 {
@@ -633,8 +633,8 @@ main > div {
   width: 90vw;
   display: flex;
   flex-direction: row;
-  min-height: 60vh;
-  max-height: 60vh;
+  min-height: 59.8vh;
+  max-height: 59.8vh;
   justify-content: center;
 }
 
