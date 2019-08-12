@@ -11,6 +11,6 @@
 
 # Redirects from *com.pl & *netlify.com to primary domain
 
-http://www.moj-psychoterapeuta.com.pl/* https://www.moj-psychoterapeuta.pl/:splat 301!
-http://moj-psychoterapeuta.com.pl/* https://www.moj-psychoterapeuta.pl/:splat 301!
+https://www.moj-psychoterapeuta.com.pl/* https://www.moj-psychoterapeuta.pl/:splat 301!
+https://moj-psychoterapeuta.com.pl/* https://www.moj-psychoterapeuta.pl/:splat 301!
 https://moj-psychoterapeuta.netlify.com/* https://www.moj-psychoterapeuta.pl/:splat 301!
