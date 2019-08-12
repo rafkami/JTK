@@ -1,0 +1,16 @@
+# Redirects from English to Polish
+
+/offer.html        /oferta.html
+/about.html        /o_mnie.html
+/contact.html      /kontakt.html
+/google            https://www.google.com
+
+# 404
+
+/* /404.html 404
+
+# Redirects from *com.pl & *netlify.com to primary domain
+
+https://www.moj-psychoterapeuta.com.pl/* https://www.moj-psychoterapeuta.pl/:splat 301!
+https://moj-psychoterapeuta.com.pl/* https://www.moj-psychoterapeuta.pl/:splat 301!
+https://moj-psychoterapeuta.netlify.com/* https://www.moj-psychoterapeuta.pl/:splat 301!

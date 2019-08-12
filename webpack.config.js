@@ -5,8 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const dotenv = require("dotenv").config({ path: __dirname + "/.env" });
 
 module.exports = {
-  entry:
-    "./src/js/script_main.js",
+  entry: "./src/js/script_main.js",
   output: {
     path: path.resolve(__dirname, "public"),
     filename: "[name].bundle.js",
@@ -75,20 +74,24 @@ module.exports = {
       template: "src/index.html"
     }),
     new HtmlWebpackPlugin({
-      filename: "about.html",
-      template: "src/about.html"
+      filename: "o_mnie.html",
+      template: "src/o_mnie.html"
     }),
     new HtmlWebpackPlugin({
-      filename: "offer.html",
-      template: "src/offer.html"
+      filename: "oferta.html",
+      template: "src/oferta.html"
     }),
     new HtmlWebpackPlugin({
       filename: "media.html",
       template: "src/media.html"
     }),
     new HtmlWebpackPlugin({
-      filename: "contact.html",
-      template: "src/contact.html"
+      filename: "kontakt.html",
+      template: "src/kontakt.html"
+    }),
+    new HtmlWebpackPlugin({
+      filename: "404.html",
+      template: "src/404.html"
     }),
     new MiniCssExtractPlugin({
       filename: "style.css",

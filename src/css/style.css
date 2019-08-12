@@ -305,6 +305,59 @@ section {
   opacity: 0.9;
 }
 
+/* 404.html */
+
+.container-404 {
+  text-align: center;
+  height: 96.4vh;
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+.message-404 {
+  position: absolute;
+  z-index: 1;
+  color: #6f3e76;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+  top: calc(50% + 4rem);
+  transform: translateY(-50%);
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.message-link {
+  text-decoration: none;
+  font-size: 4rem;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  border-radius: 1.5rem;
+  transition: 0.3s;
+}
+
+.message-link:hover {
+  color: #805a8c;
+  background-color: #fff;
+}
+
+.video-404 {
+  /* width: 100%; */
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0.9;
+}
+
 /* Zasadnicza treść strony głównej i uniwersalia */
 
 main > div {
@@ -464,6 +517,10 @@ main > div {
 .about__gallery--item:hover {
   box-shadow: 0 1.5rem 3rem #bf9994;
   transform: scale(1.05);
+}
+
+.baguetteBox-button#close-button {
+  top: 10vh;
 }
 
 /* subtitle - many pages */
@@ -938,6 +995,10 @@ footer {
   font-size: 1.2rem;
   padding: 1rem;
   background-image: linear-gradient(to top, #bf9994, #fff);
+}
+
+.footer__404 {
+  margin-top: 0;
 }
 
 @media (max-width: 1500px) and (orientation: landscape) {
@@ -1846,7 +1907,7 @@ footer {
   }
 
   .pricelist {
-    transform: translateY(200%);
+    transform: translateY(250%);
   }
 
   .offer__column.active {

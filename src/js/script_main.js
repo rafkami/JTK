@@ -1,10 +1,11 @@
 import "../css/style.css";
 import "../video/Feather - 11168 (1).mp4";
-import "../about.html";
-import "../offer.html";
-import "../contact.html";
+import "../o_mnie.html";
+import "../oferta.html";
+import "../kontakt.html";
 import "../blog.html";
 import "../media.html";
+import "../404.html";
 import "./zl_widget";
 import baguetteBox from "../../node_modules/baguettebox.js/dist/baguetteBox";
 
@@ -91,7 +92,7 @@ document.addEventListener("click", function(e) {
 
 baguetteBox.run(".about__gallery", {
   async: true,
-  fullScreen: true,
+  fullScreen: false,
   titleTag: true,
   overlayBackgroundColor: "rgba(111, 62, 118, 1)"
 });
