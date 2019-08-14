@@ -520,7 +520,11 @@ main > div {
 }
 
 .baguetteBox-button#close-button {
-  top: 10vh;
+  top: 12vh;
+}
+
+#baguetteBox-overlay.visible {
+  backdrop-filter: blur(10px);
 }
 
 /* subtitle - many pages */

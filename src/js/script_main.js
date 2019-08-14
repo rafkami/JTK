@@ -94,7 +94,7 @@ baguetteBox.run(".about__gallery", {
   async: true,
   fullScreen: false,
   titleTag: true,
-  overlayBackgroundColor: "rgba(111, 62, 118, 1)"
+  overlayBackgroundColor: "rgba(111, 62, 118, .5)"
 });
 
 // wjeżdżające info w ofercie
