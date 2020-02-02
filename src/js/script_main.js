@@ -138,11 +138,11 @@ if (blogList) {
 
 if (document.getElementById("contact__map--leg")) {
   const mymapLeg = L.map("contact__map--leg").setView(
-    [52.3953581, 20.9184158],
+    [52.3922542, 20.9290282],
     17
   );
 
-  const markerLeg = L.marker([52.3953581, 20.9184158]).addTo(mymapLeg);
+  const markerLeg = L.marker([52.3922542, 20.9290282]).addTo(mymapLeg);
 
   const mymapWaw = L.map("contact__map--waw").setView(
     [52.230319, 21.0678778],
